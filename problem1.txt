@@ -1,0 +1,35 @@
+Problem 1
+
+Analysis: 
+	input: a number, a boolean value
+	output: a number, error message
+	error conditions: a number input <= 0
+	
+Program:
+variable dosage = 0
+input a number to variable age
+while age <= 0 
+	print "Age must be greater than O. Input age again."
+	input a number to age
+input a boolean value to variable hasLiverDamage
+if hasLiverDamage = true
+	if age < 12
+		then dosage = 0
+	if age >= 12 and age < 18
+		then dosage = 1
+	else 
+		then dosage = 2	
+else
+	if age < 12
+		then dosage = 0
+	if age >= 12 and age < 18
+		then dosage = 2
+	else  
+		then dosage = 4
+print dosage
+
+Test data: inputs <= 0, 11.999, 12, 12.001, 17.999, 18, 18.001
+			boolean values true and false
+			
+			
+			

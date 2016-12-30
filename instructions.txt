@@ -1,0 +1,109 @@
+Assignment 1 - Pseudocode
+Overview
+
+For this assignment, you will develop programs (expressed in pseudocode) to solve several problems. For each program, you must show
+
+your problem analysis (input, output, error conditions),
+your program, and
+the test cases needed to test your program.
+Your answers should be written using the Jedit editor.  Your programs must be in legal pseudocode, i.e., they must use only the expressions and statement types listed here.
+
+We will not be picky about the exact wording you use for the steps in your algorithm. For example, you may write
+
+let the user type a number and store it into the variable x
+
+
+instead of
+
+read x
+
+
+Any clear, understandable form is acceptable. However, your statements must follow these rules:
+
+They must be precise: all information and variables manipulated at each step of your algorithm must be specified explicitly. For example, "add everything up" is not acceptable, since it does not explicitly specify what values are to be added, and also because it does not state where the result is to be stored.
+
+They must be organized: The order of operations in your program must be absolutely clear.
+
+They must only use operations from the permitted set.
+
+ 
+
+Example
+
+ 
+
+Problem: compute the absolute value of a number.  You may assume the input is a number.
+
+ 
+
+Answer:
+
+    Analysis:
+
+        input: a number, output: the absolute value of the input number, error conditions: none - any number is acceptable input
+
+ 
+
+    Program:
+
+input a number to variable num
+
+if num < 0
+
+    then store -n in variable result
+
+    else store n in result
+
+print result
+
+    Test data: -.0001, 0, .00001
+
+ 
+
+Problems
+
+Problem 1
+
+ 
+
+Write a program that calculates the appropriate dosage of a medication according to the following rules:
+
+if the age of the patient is less than 12 years old, the appropriate dosage is 0 pills per day. (In other words, the medication should not be given at all).
+
+If the the patient is at least 12 years old but less than 18 years old, the dosage is 2 pills per day.
+
+If the patient is 18 or older, the dosage is 4 pills per day.
+
+The above dosages are for patients with healthy livers. If the patient has liver damage, the dosages should be half the amount given above.
+
+ 
+
+Write your answer in a file named problem1.txt
+
+Problem 2
+
+Write a program that computes the shipping cost on a book order. Assume the following rules:
+
+If the cost of the books is $100 or more, shipping is free ($0)
+
+if the cost of the books is $50 or more but less than $100, shipping is $6
+
+if the cost of the books is less than $50 shipping is $2
+
+if the coupon code is “shiphalf” shipping is half the amounts above.
+
+For this problem, you should keep amounts of money as whole dollars, e.g. $10.00 is represented by the number 10.
+
+ 
+
+Write your answer in a file named problem2.txt
+
+Problem 3
+
+Write a program that inputs a three word sentence and prints those three words in reverse order. E.g, if the input is “Food tastes good” the output should be “good tastes Food” .   If the input is "I know you" the output should be "you know I".  Note that you may assume that there are three words, and that there is one space between each pair of words, no other spaces, and no punctuation. In other words you do not have to check to see if any of these assumptions is violated. As a result, there are no error conditions to check for. Also, you do not have to check or change any capitalization.
+
+Write your answer in a file named problem3.txt
+
+Turning in your work
+
+Turn in your work by attaching the three files as three separate attachments to this assignment. Note that this assignment is due Friday evening.

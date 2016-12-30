@@ -1,0 +1,25 @@
+Problem 3
+
+Analysis:
+	input: a string
+	output: a string
+	error conditions: none
+	
+Program:
+initialize strings word1, word2, word3, newSentence
+initialize variables spaceIndex = 0, lastIndex = 0
+
+input string into variable sentence
+spaceIndex = the index of the first space in sentence
+word1 = substring of sentence from 0 to spaceIndex
+newSentence = substring of sentence from (spaceIndex + 1) to (length of sentence)
+spaceIndex = the index of the first space in newSentence
+word2 = substring of newSentence from 0 to spaceIndex
+word2 = word2 + " "
+newSentence = substring of newSentence from (spaceIndex + 1) to (length of newSentence)
+word3 = newSentence
+word3 = word3 + " "
+newSentence = word3 + word2 + word1
+print newSentence
+
+Test data: any three word string
